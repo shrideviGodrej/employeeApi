@@ -16,7 +16,7 @@ var empSvc = new EmployeeServices()
 
 employeerouter.get("/demo", async(req,res)=>{
    
-        res.status(200).json({ 'data':'Sample data'});
+        res.status(200).json({ 'data':'Sample data for employee'});
     
 });
 employeerouter.get("/", async(req,res)=>{
