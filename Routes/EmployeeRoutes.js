@@ -14,6 +14,11 @@ var empSvc = new EmployeeServices()
     }
 });*/
 
+employeerouter.get("/demo", async(req,res)=>{
+   
+        res.status(200).json({ 'data':'Sample data'});
+    
+});
 employeerouter.get("/", async(req,res)=>{
     let emps = await empSvc.getAllEmployees()
         .catch(err=>{
